@@ -6,7 +6,7 @@
   "compatibility": {
 	
     "minimum": "10",
-    "verified": "10"
+    "verified": "11"
   },
   "authors": [
     {
@@ -16,11 +16,18 @@
       "flags": {}
     },
 	    {
+      "name": "sdenec",
+      "email": "",
+      "url": "https://github.com/sdenec",
+      "flags": {}
+    },
+	    {
       "name": "UnoriginalDM",
       "email": "",
       "url": "",
       "flags": {}
     }
+	  
   ],
   "esmodules": [
     "scripts/spell_level_buttons.js"
@@ -31,8 +38,8 @@
   "languages": [
 
   ],
-  "manifest": "https://github.com/UnoriginalDM/spell-level-buttons-for-dnd5e/releases/latest/download/module.json",
-  "url": "https://github.com/UnoriginalDM/spell-level-buttons-for-dnd5e",
-  "download": "https://github.com/UnoriginalDM/spell-level-buttons-for-dnd5e/releases/latest/download/spell-level-buttons-for-dnd5e.zip",
-  "readme": "https://github.com/UnoriginalDM/spell-level-buttons-for-dnd5e/blob/master/README.md"
+  "manifest": "https://github.com/hateitwtf/spell-level-buttons-for-dnd5e/releases/latest/download/module.json",
+  "url": "https://github.com/hateitwtf/spell-level-buttons-for-dnd5e",
+  "download": "https://github.com/hateitwtf/spell-level-buttons-for-dnd5e/releases/latest/download/spell-level-buttons-for-dnd5e.zip",
+  "readme": "https://github.com/hateitwtf/spell-level-buttons-for-dnd5e/blob/master/README.md"
 }
