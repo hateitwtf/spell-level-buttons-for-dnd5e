@@ -7,7 +7,7 @@ https://github.com/sdenec/tidy5e-sheet
 # Install instructions
 This Package can be installed from within Foundry VTT or manually via the following Manifest URL:
 
-    https://github.com/UnoriginalDM/spell-level-buttons-for-dnd5e/releases/latest/download/module.json
+    https://github.com/hateitwtf/spell-level-buttons-for-dnd5e/releases/download/latest/module.json
 
 
 # Screenshots
