@@ -1,18 +1,5 @@
-Hooks.on('renderAbilityUseDialog', function(options) {
-    if (
-    //game.settings.get(CONSTANTS.MODULE_ID, "enableSpellLevelButtons") &&
-    // The module already do the job so for avoid redundance...
-    game.modules.get("spell-level-buttons-for-dnd5e")?.active
-  ) {
-    if (app?.item?.type != "spell") {
-      return; // Nevermind if this isn't a spell
-    }
-    if (html.find('[name="consumeSpellSlot"]').length == 0) {
-      return;
-    }
-    const optionsApplication = app;
-
-    if ($('.dnd5e.dialog #ability-use-form select[name="consumeSpellLevel"]').length > 0) {
+Hooks.on('renderAbilityUseDialog', function(app, html, options) {
+     const optionsApplication = app;
       // If the dialog box has a option to select a spell level
 
       // Resize the window to fit the contents
@@ -42,7 +29,7 @@ Hooks.on('renderAbilityUseDialog', function(options) {
 
       // Append a button for each spell level that the user can cast
       $(optionsApplication._element[0])
-        .find(`select[name="consumeSpellLevel"] option`)
+        .find(`select[name="slotLevel"] option`)
         .each(function () {
           let availableTextSlotsFounded = $(this)
             .text()
@@ -91,7 +78,7 @@ Hooks.on('renderAbilityUseDialog', function(options) {
               i = "p" + 0;
             }
           } else {
-            i = value;
+            i = value.replace('spell','');
           }
 
           if (availableSlots > 0) {
@@ -116,6 +103,5 @@ Hooks.on('renderAbilityUseDialog', function(options) {
         .on("click", function () {
           levelSelectWrapper.find("select").val($(this).find("input").val());
         });
-    }
-  }
-};
+    
+  });
