@@ -1,5 +1,8 @@
 # Spell Level Buttons for DnD 5e
 This modules replaces the spell level select dropdown menu with buttons.
+Fix based on Tidy5e by sdenec
+https://github.com/sdenec/tidy5e-sheet
+
 
 # Install instructions
 This Package can be installed from within Foundry VTT or manually via the following Manifest URL:
